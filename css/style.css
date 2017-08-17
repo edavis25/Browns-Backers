@@ -1,0 +1,236 @@
+/*
+ *	Orange = #eb3300
+ */
+
+ nav { 
+	box-shadow: 0 5px 2px -2px #4f4c4c;
+ }
+
+ @font-face {
+ 	font-family: browns;
+ 	src: url('NFL_Browns_2015.otf');
+ }
+
+
+ #bg-image {
+ 	z-index: -5000;
+ 	position: fixed;
+ 	background-position: center;
+ 	width: 100%;
+ 	/* max-height: 1000px; */
+ 	overflow: hidden;  /* hide overflow */
+ }
+ #bg-image img {
+ 	min-width: 100%;
+ }
+
+#img-tay {
+	width: 100%;
+	max-height: 600px;
+	margin-top: -20px;
+}
+/*
+ #taylor-img {
+ 	background-image: url('../img/taylor1.jpeg');
+ 	background-attachment: fixed;
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	background-origin: left;
+ 	z-index: -4999;
+ 	height: 400px;
+ 	min-width: 100%;
+ 	max-height: auto;
+ }
+ */
+ 
+ @media (max-width: 768px) {
+ 	#bg-image {
+ 		position: relative;
+ 		margin-top: 80px;
+ 	}
+ }
+
+
+@media (max-width: 768px) {
+	.navbar-default {
+		background-color: #eb3300;
+	}
+
+	.navbar-toggle {
+		margin-top: 20px;
+		border: none;
+		color: white !important;
+	}
+	
+}
+
+
+
+/*
+@media (min-width: 769px) {
+	.nav li a {
+		font-size: 1.5em !important;
+	}
+}
+*/
+
+#nav-text {
+	display: inline-block;
+	position: absolute;
+	font-family: browns;
+	font-size: 1.5em;
+	color: #ffffff;
+	margin-left: 40px;
+	margin-top: 10px;
+}
+#nav-text-strong {
+	font-size: 1.8em;
+}
+@media (max-width: 768px) {
+	#nav-text {
+		margin-left: 10px;
+		margin-top: 20px;
+		font-size: 1.25em;
+		color: #fff;
+	}
+	#nav-text-strong {
+		font-size: 1.5em;
+	}
+}
+@media (max-width: 400px) {
+	#nav-text {
+		position: relative;
+	}
+}
+
+#nav-img {
+	display: inline;
+}
+@media (max-width: 400px) {
+	#nav-img {
+		display: none;			/* Hide dog image at super small width */
+	}
+}
+
+#about {
+	background-color: #eb3300;
+	padding: 50px;
+}
+
+
+#events {
+	background-color: #fff;
+}
+
+#club-info {
+	background-color: #fff;
+	text-align: center;
+}
+
+footer {
+	background-color: #301f10;
+	min-height: 250px;
+	color: white;
+}
+
+#footer-content {
+	margin-top: 25px;
+}
+
+.orange {
+	color: #eb3300;
+}
+
+.center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.small {
+	font-size: 0.7em;
+}
+
+
+
+/**
+ Overlay
+ */
+
+ .overlay {
+ 	height: 0%;
+ 	width: 100%;
+ 	position: fixed;
+ 	z-index: 9999;
+ 	top: 0;
+ 	left: 0;
+ 	background-color: rgb(0,0,0);
+ 	background-color: rgba(0,0,0, 0.9);
+ 	overflow-y: scroll;
+ }
+ .overlay-content {
+ 	position: relative;
+ 	top: 25%;
+ 	width: 100%;
+ 	text-align: center;
+ 	margin-top: 30px;
+ 	color: white;
+ }
+ .overlay a {
+ 	padding: 8px;
+ 	text-decoration: none;
+ 	color: #818181;
+ 	display: block;
+ 	transition: 0.3s;
+ }
+ .overlay a:hover, .overlay a:focus {
+ 	color: #f1f1f1;
+ }
+ .overlay .closebtn {
+ 	position: absolute;
+ 	top: 20px;
+ 	right: 45px;
+ 	font-size: 60px;
+ 	color: white;
+ }
+ .overlay .orange {
+ 	color: #eb3300;
+ }
+ @media screen and (max-height: 450px) {
+ 	.overlay {
+ 		overflow-y: auto;
+ 	}
+ 	.overlay a {
+ 		font-size: 20px
+ 	}
+ 	.overlay .closebtn {
+ 		font-size: 40px;
+ 		top: 15px;
+ 		right: 35px;
+ 	}
+ }
+
+.table-font-small {
+	font-size: 13px;
+}
+.btn-smallest {
+	font-size: 10px;
+	max-height: 27px;
+	padding: 5px 10px 5px 10px;
+}
+.delete-wrapper {
+	display: inline;
+}
+.confirm-delete a, .confirm-delete .btn {
+	font-size: 10px;
+}
+.delete-button {
+	display: inline;
+}
+.inline {
+	display: inline;
+}
