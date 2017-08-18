@@ -27,27 +27,13 @@ class Email extends CI_Controller {
         $this->load->model('Recipient_model');
         $recipients = Recipient_model::getTestRecipients();
 
-        // *******TEST COUNTER DELETE*******
-        $count = 0;
-
         // Send emails
         foreach ($recipients as $recipient) {
             $this->email->from($this->fromEmailAddress, $this->fromEmailName);
-
-            //$this->email->to($recipient->getEmail());
-            $this->email->to('davis.25811@gmail.com');                             // ******REMOVE HARD CODED TEST
-
-
+            $this->email->to($recipient->getEmail());
             $this->email->subject($this->input->post('subject'));
             $this->email->message($this->input->post('body'));
             $this->email->send();
-
-
-            // ********TEST COUNTER DELETE***********
-            $count += 1;
-            if ($count == 20) {
-                break;
-            }
         }
 
         // Set flashdata
