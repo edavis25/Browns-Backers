@@ -25,8 +25,8 @@ class Email extends CI_Controller {
     public function send() {
         // Load recipients model and get recipients
         $this->load->model('Recipient_model');
-        $recipients = Recipient_model::getTestRecipients();
-
+        $recipients = Recipient_model::getAllRecipients();
+        
         // Send emails
         foreach ($recipients as $recipient) {
             $this->email->from($this->fromEmailAddress, $this->fromEmailName);
