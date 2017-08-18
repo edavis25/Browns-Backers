@@ -16,7 +16,7 @@
 
         <div class="container">
             <div class="row">
-                <a href="<?= base_url('email') ?>" class="btn btn-success btn-lg">Send an Email</a>
+                <a href="<?= base_url('email') ?>" class="btn btn-success btn-lg"><i class="fa fa-plus" aria-hidden="true"></i> Send an Email</a>
             </div>
             <br>
             <div class="row">

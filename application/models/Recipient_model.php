@@ -56,6 +56,18 @@ class Recipient_model extends Model {
         return self::makeObjectFromRow($row, self::class);
     }
 
+    // Used for sending testing emails before hitting entire mailing list
+    public static function getTestRecipients() {
+        $testEmails = array(
+            'davis.25811@gmail.com',
+            'eric@e-davis.com',
+            'eric@brownsbackerscolumbus.com',
+            'brian@brownsbackerscolumbus.com'
+        );
+        $rows = self::getDb()->where_in('email', $testEmails)->get('recipients')->result_array();
+        return self::makeObjectsFromRows($rows, self::class);
+    }
+
     public function insert() {
         $sql = "INSERT INTO recipients (first_name, last_name, email)
                 VALUES (?, ?, ?)";
