@@ -10,7 +10,7 @@
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="background-color: #eb3300; font-size: 1.2em">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <img id='nav-img' src='img/dog-transp.png' class='img' />
+            <img id='nav-img' src='img/dog-transp.png' class='img img-responsive hidden-xs' />
             <h3 id='nav-text'>BREWERY DISTRICT<br><span id='nav-text-strong'>BROWNS BACKERS</span></h3>
             <!--a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a -->
         </div>

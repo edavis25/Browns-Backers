@@ -50,7 +50,6 @@
  	}
  }
 
-
 @media (max-width: 768px) {
 	.navbar-default {
 		background-color: #eb3300;
@@ -61,35 +60,35 @@
 		border: none;
 		color: white !important;
 	}
-	
 }
-
-
 
 /*
-@media (min-width: 769px) {
-	.nav li a {
-		font-size: 1.5em !important;
-	}
-}
-*/
-
+ * "NAV-TEXT" MARKED AS PROBLEM AREA FOR CHROME BROWSER
+ * ALIGNMENT MESSED UP FOR TAGLINE AND DOG LOGO IN TOP LEFT
+ */
 #nav-text {
 	display: inline-block;
 	position: absolute;
 	font-family: browns;
 	font-size: 1.5em;
 	color: #ffffff;
-	margin-left: 40px;
-	margin-top: 10px;
+	/*margin-left: 40px;
+	margin-top: 10px;*/
+	top: -0.5em;
+	left: 7em;
 }
 #nav-text-strong {
 	font-size: 1.8em;
 }
 @media (max-width: 768px) {
 	#nav-text {
+		/*
 		margin-left: 10px;
 		margin-top: 20px;
+		*/
+		position: relative;
+		left: 1.25em;
+		top: 0em;
 		font-size: 1.25em;
 		color: #fff;
 	}
@@ -156,11 +155,9 @@ footer {
 }
 
 
-
 /**
  Overlay
  */
-
  .overlay {
  	height: 0%;
  	width: 100%;
