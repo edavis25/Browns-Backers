@@ -16,6 +16,17 @@ class Admin extends CI_Controller {
 
     // Display admin tools view
     public function tools($offset = 0) {
+
+        $this->load->model('Recipient_queue');
+        $recipient = $this->Recipient_model->getRecipientById(1);
+        $que = new Recipient_queue(array(
+           'email_body' => 'body',
+           'email_subject' => 'subject',
+           'recipient_id' => $recipient->getId()
+        ));
+        dd($que);
+
+
         $this->load->library('pagination');
 
         // Setup pagination config to use Bootstrap class stylings
