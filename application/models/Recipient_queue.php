@@ -15,7 +15,7 @@ class Recipient_queue extends Model {
         $this->recipientId  = safeGet($properties, 'recipient_id', null);
         $this->emailBody    = safeGet($properties, 'email_body', null, false);
         $this->emailSubject = safeGet($properties, 'email_subject', null);
-        $this->timestamp    = time();
+        $this->timestamp    = safeGet($properties, 'timestamp', null);
     }
 
     public static function getAll() {
@@ -29,6 +29,31 @@ class Recipient_queue extends Model {
     public static function getByRecipientId($recipientId) {
         $row = self::getDb()->where('recipient_id', $recipientId)->get('recipient_queue')->row_array();
         return self::makeObjectFromRow($row, self::class);
+    }
+
+    public function getRecipientId() {
+        return $this->recipientId;
+    }
+    public function setRecipientId($id) {
+        $this->recipientId = $id;
+    }
+    public function getEmailBody() {
+        return $this->emailBody;
+    }
+    public function setEmailBody($body) {
+        $this->emailBody = $body;
+    }
+    public function getEmailSubject() {
+        return $this->emailSubject;
+    }
+    public function setEmailSubject($subject) {
+        $this->emailSubject = $subject;
+    }
+    public function getTimestamp() {
+        return $this->timestamp;
+    }
+    public function setTimestamp($timestamp) {
+        $this->timestamp = $timestamp;
     }
 
     public function insert() {
@@ -56,7 +81,8 @@ class Recipient_queue extends Model {
     }
 
     public function delete() {
-
+        $this->db->where('id', $this->getId());
+        $this->db->delete('recipient_queue');
     }
 
 }
