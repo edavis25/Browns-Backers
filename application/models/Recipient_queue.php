@@ -61,7 +61,7 @@ class Recipient_queue extends Model {
             'recipient_id'  => $this->recipientId,
             'email_body'    => $this->emailBody,
             'email_subject' => $this->emailSubject,
-            'timestamp'     => $this->timestamp()
+            'timestamp'     => $this->timestamp
         );
 
         $this->db->insert('recipient_queue', $data);
