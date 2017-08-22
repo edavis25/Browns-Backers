@@ -131,6 +131,11 @@
             </div>
         </div>
     </div>
+    <br>
+    <hr>
+    <div>
+        <img src="<?= base_url('img/schedule.png') ?>" class="img img-responsive center-block" id='schedule' />
+    </div>
 </section>
 
 <?php include 'includes/footer.php' ?>
