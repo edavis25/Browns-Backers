@@ -86,11 +86,16 @@ function dumpArray($elements) {
 
 // Function to safely fetch a value from an array, supplying a default
 // if no key is present.
-function safeGet($array, $key, $default=false) {
+function safeGet($array, $key, $default=false, $sanitize=true) {
     if (isset($array[$key])) {
         $value = $array[$key];
         if (!is_array($value)) {
-            $value = htmlspecialchars(trim($array[$key]));
+            if ($sanitize) {
+                $value = htmlspecialchars(trim($array[$key]));
+            }
+            else {
+                $value = $array[$key];
+            }
         }
         if ($value) {
             return $value;

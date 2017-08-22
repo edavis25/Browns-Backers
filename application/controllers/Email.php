@@ -3,6 +3,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Email extends CI_Controller {
 
+    // Siteground mail limit = 80emails/15mins
+    private $emailSendLimit = 80;
+
+    // Email from info
     private $fromEmailAddress = 'brian@brownsbackerscolumbus.com';
     private $fromEmailName    = 'Brian Mez';
 
@@ -23,17 +27,37 @@ class Email extends CI_Controller {
     }
 
     public function send() {
-        // Load recipients model and get recipients
+        // Load models and get recipients
         $this->load->model('Recipient_model');
+        $this->load->model('Recipient_queue');
         $recipients = Recipient_model::getAllRecipients();
-        
+
+        // Sent email counter flag to queue emails exceeding the host's limit (80 emails/15 mins)
+        $sentEmailCount = 0;
+
         // Send emails
         foreach ($recipients as $recipient) {
-            $this->email->from($this->fromEmailAddress, $this->fromEmailName);
-            $this->email->to($recipient->getEmail());
-            $this->email->subject($this->input->post('subject'));
-            $this->email->message($this->input->post('body'));
-            $this->email->send();
+            // If limit not reached, send email
+            if ($sentEmailCount < $this->emailSendLimit) {
+                $this->email->from($this->fromEmailAddress, $this->fromEmailName);
+                $this->email->to($recipient->getEmail());
+                $this->email->subject($this->input->post('subject'));
+                $this->email->message($this->input->post('body'));
+                $this->email->send();
+            }
+            else {
+                // Else queue the emails in DB for cron job sending
+                $queued = new Recipient_queue(array(
+                    'recipient_id'  => $recipient->getId(),
+                    'email_body'    => $this->input->post('body'),
+                    'email_subject' => $this->input->post('subject'),
+                    'timestamp'     => time()
+                ));
+
+                $queued->insert();
+            }
+
+            $sentEmailCount += 1;
         }
 
         // Set flashdata
