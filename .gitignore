@@ -33,3 +33,4 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 application/database/*
 application/config/config.php
 STATIC_BACKUP.zip
+php_mail.log
