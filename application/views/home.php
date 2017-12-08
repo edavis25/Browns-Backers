@@ -64,6 +64,10 @@
 <section id="events">
     <div class="container">
         <div class="row">
+            <img src="<?= base_url('img/browns-week13promo.jpg') ?>" class="img 
+img-responsive center-block" alt="Upcoming Event" style="max-height: 500px; margin-bottom: 70px;" />
+        </div>
+        <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading"><b>Upcoming Events</b></h2>
                 <hr class="primary">
