@@ -64,7 +64,7 @@
 <section id="events">
     <div class="container">
         <div class="row">
-            <img src="<?= base_url('img/browns-week13promo.jpg') ?>" class="img 
+            <img src="<?= base_url('img/browns-week14promo.jpg') ?>" class="img 
 img-responsive center-block" alt="Upcoming Event" style="max-height: 500px; margin-bottom: 70px;" />
         </div>
         <div class="row">
@@ -77,22 +77,36 @@ img-responsive center-block" alt="Upcoming Event" style="max-height: 500px; marg
     <div class="container">
         <div class="row">
             <div class='container'>
-            <h3 class='orange'><b>Sunday October 8th:</b></h3>
+            <h3 class='orange'><b>Sunday December 31st:</b></h3>
                 <p>
-                    <b>Cleveland Browns vs. New York Jets Bus Trip</b><br>
-                    Join us Sunday, October 8th, for an all-inclusive trip to watch our Cleveland Browns take on the New York Jets!
-                    All tickets include round-trip transportation, admission, and pre-game food and drinks provided by Jimmy V's Grill &amp; Pub.
-                    Due to a limited number of seats on the bus, tickets will be offered exclusively to official members of the Brewery District Browns
-                    Backers until <b>August 1st</b>. For additional information, please feel free to reach out to chapter president Brian "Mez" with any questions
-                    you may have. Seats are filling fast, so reserve your ticket soon to make sure you don't miss out on the first official Brewery District Browns Backers
-                    trip of the season!<br>
+                    <b>Cleveland Browns vs. Pittsburgh Steelers Pool</b><br>
+                    The Brewery District Browns Backers will be holding a <em>$2000 total payout</em> football pool for the final game of the season against the Pittsburgh Steelers! Each participant will be assigned 1 number for each team and the individual whose numbers match the last number of the score for each team following the end of each quarter will be crowned winners. The pool will also feature a reverse payout system where the participant whose numbers match the end of quarter scores for the opposite team will also win.
                 </p>
-                <h4><b>$140/Ticket</b></h4>
-                &bull; Includes transportation, game admission, &amp; food/drinks<br>
-                &bull; All payments due by <b>August 1st</b><br>
-                &bull; Deliver payments to Jimmy V's using cash, check, or credit card <sup><i class="fa fa-info-circle" aria-hidden="true" data-toggle='tooltip' data-container="body" title='All credit card payments are subject to an additional $5 convenience fee'></i></sup>
+                <p>
+                    For example, if at the end of the 1st quarter the score is: Browns 14 and Steelers 7, the participant with 4 for the Browns and 7 for the Steelers will win the primary payout while the participant with 4 for the Steelers and 7 for the Browns will win the reverse payout.
+                </p>
+                <h3><b>$20 per square</b></h3>
+                <p>
+                    <b>Payouts:</b><br>
+                    &bull; 1st Quarter: $400 primary - $100 reverse<br>
+                    &bull; 2nd Quarter: $400 primary - $100 reverse<br>
+                    &bull; 3rd Quarter: $400 primary - $100 reverse<br>
+                    &bull; Final Score: $400 primary - $100 reverse<br>
+                    <small><em>Payouts determined by scores at the end of quarters 1-3 and final score</em></small>
+                </p>
+               
+                <p>
+                <b>Payment Information:</b><br>
+                    &bull; All payments must be made up front<br>
+                    &bull; Square purchases made at Jimmy V's bar<br>
+                    &bull; Numbers for squares will be released prior to kickoff<br>
+                    &bull; For more details, contact club president <a href='mailto:brian@brownsbackerscolumbus.com' class='orange'>Brian "Mez"</a>
+                </p>
             </div>
-            
+        </div>
+
+        <div class="row">
+            <img src="<?= base_url('img/browns-steelers-promo.jpg') ?>" class="img img-responsive center-block" alt="Football pool promo image" style="max-height: 600px; margin-bottom: 70px; margin-top: 25px;" />
         </div>
     </div>
 </section>
