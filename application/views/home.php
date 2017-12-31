@@ -64,8 +64,7 @@
 <section id="events">
     <div class="container">
         <div class="row">
-            <img src="<?= base_url('img/browns-week15promo.jpg') ?>" class="img 
-img-responsive center-block" alt="Upcoming Event" style="max-height: 500px; margin-bottom: 70px;" />
+            <img src="<?= base_url('img/browns-steelers-promo.jpg') ?>" class="img img-responsive center-block" alt="Football pool promo image" style="max-height: 600px; margin-bottom: 70px; margin-top: 25px;" />
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -94,7 +93,7 @@ img-responsive center-block" alt="Upcoming Event" style="max-height: 500px; marg
                     &bull; Final Score: $400 primary - $100 reverse<br>
                     <small><em>Payouts determined by scores at the end of quarters 1-3 and final score</em></small>
                 </p>
-               
+
                 <p>
                 <b>Payment Information:</b><br>
                     &bull; All payments must be made up front<br>
@@ -105,9 +104,6 @@ img-responsive center-block" alt="Upcoming Event" style="max-height: 500px; marg
             </div>
         </div>
 
-        <div class="row">
-            <img src="<?= base_url('img/browns-steelers-promo.jpg') ?>" class="img img-responsive center-block" alt="Football pool promo image" style="max-height: 600px; margin-bottom: 70px; margin-top: 25px;" />
-        </div>
     </div>
 </section>
 
@@ -116,7 +112,7 @@ img-responsive center-block" alt="Upcoming Event" style="max-height: 500px; marg
         <div class='row-fluid' id='taylor-img'>
             <span id='club-info-anchor-link'></span>
             <img src='img/taylor2.jpeg' class='img img-responsive' id='img-tay' />
-        </div>  
+        </div>
     </div>
 </section>
 
