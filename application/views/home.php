@@ -57,7 +57,7 @@
 <section id="events">
     <div class="container">
         <div class="row">
-            <img src="<?= base_url('img/browns-steelers-promo.jpg') ?>" class="img img-responsive center-block" alt="Football pool promo image" style="max-height: 600px; margin-bottom: 70px; margin-top: 25px;" />
+            <img src="<?= base_url('img/2018/browns-week1promo.jpg') ?>" class="img img-responsive center-block" alt="Football pool promo image" style="max-height: 600px; margin-bottom: 70px; margin-top: 25px;" />
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
