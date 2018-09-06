@@ -131,7 +131,7 @@
     <br>
     <hr>
     <div>
-        <img src="<?= base_url('img/schedule.png') ?>" class="img img-responsive center-block" id='schedule' />
+        <img src="<?= base_url('img/2018-schedule.jpg') ?>" class="img img-responsive center-block" id='schedule' />
     </div>
 </section>
 
