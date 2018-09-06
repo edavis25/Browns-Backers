@@ -1,7 +1,7 @@
 <?php include 'includes/header.php' ?>
 
 <!-- Background image -->
-<div id="bg-image"><img src='img/crowell-2500.jpg' class='img img-responsive' /></div>
+<div id="bg-image"><img src='img/garrett.jpg' class='img img-responsive' /></div>
 
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -38,14 +38,7 @@
 </nav>
 
 <header>
-    <!--div class="header-content">
-        <div class="header-content-inner">
-            <h1 id="homeHeading">Your Favorite Source of Free Bootstrap Themes</h1>
-            <hr>
-            <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-            <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
-        </div>
-    </div-->
+    <!-- IMPORTANT: This header tag must be left here for the background image to work w/ theme -->
 </header>
 
 <section class="bg-primary" id="about">
