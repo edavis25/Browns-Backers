@@ -69,30 +69,20 @@
     <div class="container">
         <div class="row">
             <div class='container'>
-            <h3 class='orange'><b>Sunday December 31st:</b></h3>
+            <h3 class='orange'><b>Annual Bus Trip</b></h3>
                 <p>
-                    <b>Cleveland Browns vs. Pittsburgh Steelers Pool</b><br>
-                    The Brewery District Browns Backers will be holding a <em>$2000 total payout</em> football pool for the final game of the season against the Pittsburgh Steelers! Each participant will be assigned 1 number for each team and the individual whose numbers match the last number of the score for each team following the end of each quarter will be crowned winners. The pool will also feature a reverse payout system where the participant whose numbers match the end of quarter scores for the opposite team will also win.
+                    <b>Sunday, November 4th:</b><br>
+                    The Brewery District Browns Backers will be hosting their annual bus trip to FirstEnergy Stadium to watch
+                    our beloved Cleveland Browns take on the Kansas City Chiefs! Tickets include transportation, game admission (section 101),
+                    food, drinks, and tailgating.
                 </p>
+                <h3><b>$160 per ticket</b></h3>
+                <small><em>Tickets purchased before 9/9 only $145!</em></small>
+                <br><br>
                 <p>
-                    For example, if at the end of the 1st quarter the score is: Browns 14 and Steelers 7, the participant with 4 for the Browns and 7 for the Steelers will win the primary payout while the participant with 4 for the Steelers and 7 for the Browns will win the reverse payout.
-                </p>
-                <h3><b>$20 per square</b></h3>
-                <p>
-                    <b>Payouts:</b><br>
-                    &bull; 1st Quarter: $400 primary - $100 reverse<br>
-                    &bull; 2nd Quarter: $400 primary - $100 reverse<br>
-                    &bull; 3rd Quarter: $400 primary - $100 reverse<br>
-                    &bull; Final Score: $400 primary - $100 reverse<br>
-                    <small><em>Payouts determined by scores at the end of quarters 1-3 and final score</em></small>
-                </p>
-
-                <p>
-                <b>Payment Information:</b><br>
-                    &bull; All payments must be made up front<br>
-                    &bull; Square purchases made at Jimmy V's bar<br>
-                    &bull; Numbers for squares will be released prior to kickoff<br>
-                    &bull; For more details, contact club president <a href='mailto:brian@brownsbackerscolumbus.com' class='orange'>Brian "Mez"</a>
+                    <b>Payment Information:</b><br>
+                    &bull; All payments must be made by cash or check<br>
+                    &bull; Payments can be made at Jimmy V's bar or by contacting club president <a href='mailto:brian@brownsbackerscolumbus.com' class='orange'>Brian "Mez"</a><br>
                 </p>
             </div>
         </div>
